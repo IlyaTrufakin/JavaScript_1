@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Functions</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+
+  <body>
+    <div class="mainWindow">
+      <h1>Завдання</h1>
+
+      <!-- задача 1 -->
+      <div class="taskWindow">
+        <h4>1. Напишіть функцію зведення числа у ступінь.</h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="base">Число:</label>
+        <input type="number" name="base" id="base" />
+        <label for="exponent">Ступінь:</label>
+        <input type="number" name="exponent" id="exponent" />
+        <button
+          onclick="document.getElementById('Output1').innerHTML = `<p>Відповідь: ${Power(document.getElementById('base').value, document.getElementById('exponent').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output1"></div>
+      </div>
+
+      <!-- задача 2 -->
+      <div class="taskWindow">
+        <h4>2. Напишіть функцію пошуку найбільшого спільного дільника.</h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="a">Число 1:</label>
+        <input type="number" name="a" id="a" />
+        <label for="b">Число 2:</label>
+        <input type="number" name="b" id="b" />
+        <button
+          onclick="document.getElementById('Output2').innerHTML = `<p>Відповідь: ${gcd(document.getElementById('a').value, document.getElementById('b').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output2"></div>
+      </div>
+
+      <!-- задача 3 -->
+      <div class="taskWindow">
+        <h4>3. Напишіть функцію для пошуку максимальної цифри у числі.</h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="inputNumber1">Число:</label>
+        <input type="number" name="inputNumber1" id="inputNumber1" />
+        <button
+          onclick="document.getElementById('Output3').innerHTML = `<p>Відповідь: ${maxDigit(document.getElementById('inputNumber1').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output3"></div>
+      </div>
+
+      <!-- задача 4 -->
+      <div class="taskWindow">
+        <h4>4. Напишіть функцію, яка визначає чи є передане число простим.</h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="inputNumber2">Число:</label>
+        <input type="number" name="inputNumber2" id="inputNumber2" />
+        <button
+          onclick="document.getElementById('Output4').innerHTML = `<p>Відповідь: ${isPrime(document.getElementById('inputNumber2').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output4"></div>
+      </div>
+
+      <!-- задача 5 -->
+      <div class="taskWindow">
+        <h4>
+          5. Напишіть функцію для виведення усіх множників, переданих числу у
+          зростаючому порядку. Наприклад: число 18 – множники 2*3*3.
+        </h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="inputNumber3">Число:</label>
+        <input type="number" name="inputNumber3" id="inputNumber3" />
+        <button
+          onclick="document.getElementById('Output5').innerHTML = `<p>Відповідь: ${printFactors(document.getElementById('inputNumber3').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output5"></div>
+      </div>
+
+      <!-- задача 6 -->
+      <div class="taskWindow">
+        <h4>
+          6. Написати функцію, яка повертає число Фібоначчі за переданим
+          порядковим номером. Числа Фібоначчі: 1, 1, 2, 3, 5, 8, 13 ... Ряд
+          ґрунтується на тому, що кожне число дорівнює сумі двох попередніх
+          чисел. Наприклад: порядковий номер 3 – число 2, порядковий номер 6 –
+          число 8.
+        </h4>
+        <p>Введіть параметри для обчислення функції</p>
+        <label for="inputNumber4">Число:</label>
+        <input type="number" name="inputNumber4" id="inputNumber4" />
+        <button
+          onclick="document.getElementById('Output6').innerHTML = `<p>Відповідь: ${fibonacci(document.getElementById('inputNumber4').value)}</p>`;"
+        >
+          Виконати
+        </button>
+        <div class="outputField" id="Output6"></div>
+      </div>
+    </div>
+
+    <script src="./Assets/main.js"></script>
+  </body>
+</html>

@@ -1,1 +1,30 @@
+/* body {
+  background-color: cornflowerblue;
+} */
 
+.mainWindow {
+  background-color: rgb(150, 193, 241);
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  color: rgb(66, 66, 66);
+}
+
+.taskWindow {
+  margin-top: 20px;
+  background-color: rgb(62, 145, 240);
+  padding: 10px;
+  color: rgb(66, 66, 66);
+}
+
+.outputField {
+  background-color: rgb(27, 77, 134);
+  /* padding: 5px; */
+  margin: 10px 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  height: auto;
+}
+
+p {
+  padding: 5px;
+}
